@@ -16,4 +16,5 @@ const filePath = 'example.jpg';
 const extension = path.extname(filePath); // returns '.jpg'
 ```
 
-3. We will cache the directory in indexed db at render side , and add a watch for changes program which watches for changes in the directory and if there are changes with an api send a signal to the frontend to update the directory list cache, now the render process will send a api request back to the node backend to get the new directory list in async and await 
+3. We will cache the directory in indexed db at render side , and add a watch for changes program which watches for changes in the directory and if there are changes with an api send a signal to the frontend to update the directory list cache, now the render process will send a api request back to the node backend to get the new directory list in async and await.
+alternatively we will add a persistent service to fetch new dir list to update the cache list we will only cache the file and folder names and folder and file trees not their content.
