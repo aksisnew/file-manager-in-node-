@@ -1,0 +1,1 @@
+here i will add the algorithms and ways 
